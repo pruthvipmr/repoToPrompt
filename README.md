@@ -1,0 +1,1 @@
+I wanted to be able to ask ChatGPT and Claude questions about my projects but was tired of manually typing everything out. This script converts an entire local project directory into a text file with the entire project structure and all the files with code in it. You can tweak it to include or exclude whatever specifics you want. Use it to your heart's dsires.
