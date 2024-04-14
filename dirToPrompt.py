@@ -39,7 +39,7 @@ def retrieve_folder_info(folder_path):
     return formatted_string
 
 # Example usage
-folder_path = "pruthvi_me"
+folder_path = "path/to/directory"
 output_file = "output.txt"
 
 formatted_string = retrieve_folder_info(folder_path)
