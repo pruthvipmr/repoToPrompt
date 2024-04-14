@@ -1,10 +1,12 @@
 import os
 
 def get_file_content(file_path):
+    """ Reads the content of a file given its path."""
     with open(file_path, 'r', encoding='utf-8') as file:
         return file.read()
 
 def build_directory_tree(path, indent=0, file_paths=[]):
+    """Recursively builds a string representation of the directory tree and collects file paths."""
     tree_str = ""
     items = os.listdir(path)
     for item in items:
@@ -21,6 +23,7 @@ def build_directory_tree(path, indent=0, file_paths=[]):
     return tree_str, file_paths
 
 def retrieve_folder_info(folder_path):
+    """Retrieves and formats the folder information, including README, directory tree, and file contents."""
     formatted_string = ""
     readme_path = os.path.join(folder_path, 'README.md')
     if os.path.exists(readme_path):
